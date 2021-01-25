@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My name is Agustín Souto... Welcome to my portfolio.">
+    <meta name="keywords" content="presentation,portfolio,developer,c++,javascript,html,css,python,mysql,c,java,agustín,souto,souto751,student">
+
+    <meta property="og:title" content="Portfolio | Agustín Souto">
+    <meta property="og:description" content="Hi, my name is Agustin Souto... and this is my portfolio.">
+    <meta property="og:image" content="https://github.com/Souto751/project-imgs/blob/main/og-img.png?raw=true">
+    <meta property="og:url" content="https://souto751.github.io/Portfolio">
+
+    <!--TITLE-->
+    <title>Portfolio | Agustín Souto</title>
+    <link rel="icon" href="src/web-icon.png">
+
+    <!--STYLE-->
+    <link rel="stylesheet" href="style/index.css">
+
+    <!--SCRIPT-->
+    <script src="script/index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <img src="src/web-icon.png" alt="developer" class="header-nav-icon">
+
+            <button class="menu-button" id="btn-welcome" onclick="toWelcome()">Welcome</button>
+            <button class="menu-button" id="btn-skills" onclick="skillsWindow('flex')">Skills</button>
+            <button class="menu-button" id="btn-projects" onclick="toProjects()">Projects</button>
+            <div class="myMail-div">
+                <p class="myMail">Mail:</p>
+                <p class="myMail">agus.souto75@gmail.com</p>
+            </div>
+            <div id="div-links">
+                <button class="menu-button" id="btn-linkedin"><a href="https://linkedin.com/in/souto751" target="_blank"><img src="src/linkedin.png" alt="linkedin"></a></button>
+                <button class="menu-button" id="btn-github"><a href="https://github.com/souto751" target="_blank"><img src="src/github.png" alt="github"></a></button>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="welcome-section">
+            <h1>Hello World!</h1>
+            <h2>I'm Agustín Souto, a Junior Developer</h2>
+            <blockquote>
+                "In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them." <br>- Andrew Hunt
+            </blockquote>
+        </section>
+
+        <section id="skills-section">
+            <button class="close-but" onclick="skillsWindow('none')">&times;</button>
+            <h2 class="skills-subtitle">Skills</h2>
+            <!--Start Skills Slider-->
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    
+                    <div class="slide first">
+                        <img src="src/html.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="src/css.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="src/js.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="src/c.png" alt="">
+                    </div>
+                    <div class="slide">    
+                        <img src="src/cpp.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="src/java.png" alt="">
+                    </div>
+    
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                    </div>
+                </div>
+                <div class="nav-man">
+                    <label for="radio1" class="man-btn"></label>
+                    <label for="radio2" class="man-btn"></label>
+                    <label for="radio3" class="man-btn"></label>
+                    <label for="radio4" class="man-btn"></label>
+                    <label for="radio5" class="man-btn"></label>
+                    <label for="radio6" class="man-btn"></label>
+                </div>
+            </div>
+            <!--End Skills Slider-->
+            <h2 class="skills-subtitle tool-sub">Tools</h2>
+            <!--Start Tools Slider-->
+            <div class="tools">
+                <div class="slide-tools">
+                    <input type="radio" name="tools-btn" id="tool1">
+                    <input type="radio" name="tools-btn" id="tool2">
+                    
+                    <div class="tool-slide first-tool">
+                        <img src="src/github.png" alt="">
+                    </div>
+                    <div class="tool-slide">
+                        <img src="src/git.png" alt="">
+                    </div>
+    
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                    </div>
+                </div>
+                <div class="nav-man">
+                    <label for="tool1" class="man-btn"></label>
+                    <label for="tool2" class="man-btn"></label>
+                </div>
+            </div>
+            <!--End Tools Slider-->
+        </section>
+
+        <section id="projects-section">
+            <div class="div-project">
+                <img src="src/bakeryWeb.png" alt="bakery" class="project-img">
+                <a href="https://souto751.github.io/webPupiBakery_test2/index.html" target="_blank" class="project-link"><p class="project-title">Bakery Web</p></a>
+            </div>
+
+            <div class="div-project">
+                <img src="src/productWeb.png" alt="product" class="project-img">
+                <a href="https://codepen.io/Souto751/full/YzGeNKo" target="_blank" class="project-link"><p class="project-title">Product Landing Page</p></a>
+            </div>
+
+            <div class="div-project">
+                <img src="src/surveyWeb.png" alt="survey" class="project-img">
+                <a href="https://codepen.io/Souto751/full/YzGYMmv" target="_blank" class="project-link"><p class="project-title">Survey Page</p></a>
+            </div>
+
+            <div class="div-project">
+                <img src="src/technicalWeb.png" alt="technical" class="project-img">
+                <a href="https://codepen.io/Souto751/full/RwGyabL" target="_blank" class="project-link"><p class="project-title">Technical Documentation Page</p></a>
+            </div>
+
+            <div class="div-project">
+                <img src="src/tributeWeb.png" alt="tribute" class="project-img">
+                <a href="https://codepen.io/Souto751/full/oNzpmXd" target="_blank" class="project-link"><p class="project-title">Tribute Page</p></a>
+            </div>
+
+            <div class="div-project">
+                <img src="src/studentApp.png" alt="students" class="project-img">
+                <a href="https://github.com/Souto751/StudentsApp" target="_blank" class="project-link"><p class="project-title">Student Management App</p></a>
+            </div>
+        </section>
+
+        <div onclick="mail('flex')" class="openMail">
+            <img src="src/mail.png" alt="mail">
+        </div>
+        
+        <div id="mail-window">
+            <button class="close-but" onclick="mail('none')">&times;</button>
+
+            <h3 class="mail-subtitle">Name</h3>
+            <input type="text" class="input-mail write oneLine" required>
+
+            <h3 class="mail-subtitle">Mail</h3>
+            <input type="email" class="input-mail write oneLine" required>
+
+            <h3 class="mail-subtitle">Message</h3>
+            <textarea name="message" cols="30" rows="10" class="input-mail msg write" required></textarea>
+            
+            <input type="submit" value="Send" class="input-mail submit-btn">
+        </div>
+    </main>
+</body>
+</html>
