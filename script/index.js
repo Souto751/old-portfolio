@@ -86,3 +86,30 @@ function mail(state)
         skillsWindow('none');
     }
 }
+
+// SKILLS WINDOW ON MOBILE
+function mobileScreen(opt)
+{
+    switch(opt)
+    {
+        case 'welcome':
+            skillsWindow('none');
+            toWelcome();
+            break;
+        case 'skills':
+            let closeWelc = document.getElementById('welcome-section');
+            let closeProj = document.getElementById('projects-section');
+
+            closeWelc.style.display = 'none';
+            closeProj.style.display = 'none';
+        
+            skillsWindow('flex');
+            
+            break;
+        case 'projects':
+            skillsWindow('none');
+            toProjects();
+            break;
+    }
+
+}

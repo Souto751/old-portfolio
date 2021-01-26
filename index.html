@@ -39,7 +39,28 @@
                 <button class="menu-button" id="btn-github"><a href="https://github.com/souto751" target="_blank"><img src="src/github.png" alt="github"></a></button>
             </div>
         </nav>
+    
+        <nav class="haeder-nav-mob">
+            <input type="checkbox" name="menu-mob" id="menu-btn">
+            <label for="menu-btn"><img src="src/menu-mobile.png" alt="menu" class="menu-btn-img"></label>
+
+            <div class="menu-opts">
+                <button class="mob-menu-button" id="mob-btn-welcome" onclick="toWelcome(), mobileScreen('welcome')">Welcome</button>
+                <button class="mob-menu-button" id="mob-btn-skills" onclick="skillsWindow('flex'), mobileScreen('skills')">Skills</button>
+                <button class="mob-menu-button" id="mob-btn-projects" onclick="toProjects(), mobileScreen('projects')">Projects</button>
+                <div class="mob-myMail-div">
+                    <p class="mob-myMail">Mail:</p>
+                    <p class="mob-myMail">agus.souto75@gmail.com</p>
+                </div>
+
+                <div id="mob-div-links">
+                    <button class="mob-menu-button" id="mob-btn-linkedin"><a href="https://linkedin.com/in/souto751" target="_blank"><img src="src/linkedin.png" alt="linkedin"></a></button>
+                    <button class="mob-menu-button" id="mob-btn-github"><a href="https://github.com/souto751" target="_blank"><img src="src/github.png" alt="github"></a></button>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <main class="main">
         <section id="welcome-section">
             <h1>Hello World!</h1>
