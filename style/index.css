@@ -80,6 +80,7 @@ body
         color: #fff;
         cursor: pointer;
         font-size: 35px;
+        text-align: center;
     }
 
     #mob-div-links
@@ -153,10 +154,10 @@ body
     {
         display: none;
         flex-direction: column;
-        position: fixed;
+        position: absolute;
+        top: 85px;
         justify-content: center;
         width: 100vw;
-        height: 100%;
         gap: 50px;
     }
 
