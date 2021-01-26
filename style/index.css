@@ -144,7 +144,6 @@ body
         color: #aaa;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20vh;
         font-size: 20px;
     }
 
@@ -452,7 +451,7 @@ body
 
     #mail-window
     {
-        display: flex;
+        display: none;
         flex-direction: column;
         position: fixed;
         margin-top: 150px;
