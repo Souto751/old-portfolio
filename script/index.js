@@ -83,6 +83,7 @@ function mail(state)
     
     if(state != 'none')
     {
+        alert("Not working yet :c")
         skillsWindow('none');
     }
 }
